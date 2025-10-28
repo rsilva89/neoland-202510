@@ -100,4 +100,27 @@ $ git config user.email "gsilvalaredo@gmail.com"
 $ git config user.name "Ricardo Silva"
 ```
 
+## git commit -m message
 
+Consolidates the changes in local repository.
+
+```sh
+$ git commit -m "add bash and git docs"
+```
+
+## git push
+
+Pushes the changes from local to remote repository (origin).
+
+```sh
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 2.01 KiB | 2.01 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rsilva89/neoland-202510
+   bea1370..4dbf3f5  main -> main
+```
