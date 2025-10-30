@@ -124,3 +124,28 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/rsilva89/neoland-202510
    bea1370..4dbf3f5  main -> main
 ```
+
+## git log
+
+Shows commits history ordened descending by time.
+
+```sh
+$ git log 
+commit b8be8960af8011f1a606e697ebbd4deae02a3e96 (HEAD -> main, origin/main, origin/HEAD)
+Author: Ricardo Silva <gsilvalaredo@gmail.com>
+Date:   Tue Oct 28 23:54:24 2025 +0100
+
+  add git commit and git push commands to git doc
+
+commit 4dbf3f5719c0d7ce6ad87159419ef1f45b9797a3
+Author: Ricardo Silva <gsilvalaredo@gmail.com>
+Date:   Tue Oct 28 23:29:04 2025 +0100
+
+  add bash and git docs
+
+commit bea1370357f908dfbb3b860c4f0953b7e18733c5
+Author: Ricardo Silva <gsilvalaredo@gmail.com>
+Date:   Thu Oct 23 21:52:20 2025 +0200
+
+  Initial commit 
+```
