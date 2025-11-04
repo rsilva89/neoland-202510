@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,7 +93,7 @@
             left: 35px;
             bottom: 5px;
         }
-        
+
         #left-ear {
             width: 10px;
             height: 40px;
@@ -132,7 +133,7 @@
             left: 50px;
             top: -20px;
         }
-        
+
         #front-wheel {
             width: 40px;
             height: 40px;
@@ -142,7 +143,7 @@
             left: 20px;
             top: 20px;
         }
-        
+
         #front-rim {
             width: 30px;
             height: 30px;
@@ -182,7 +183,7 @@
             position: absolute;
             left: 100px;
             top: 300px;
-        } 
+        }
 
         #head {
             width: 50px;
@@ -199,7 +200,7 @@
             height: 15px;
             background-color: aqua;
             position: absolute;
-            left: 10px; 
+            left: 10px;
             top: -20px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -236,7 +237,7 @@
             border-radius: 50%;
             z-index: -10;
         }
-        
+
         #inner-fire {
             width: 40px;
             height: 60px;
@@ -248,8 +249,68 @@
             z-index: -10;
         }
 
+        /* house */
+
+        #house {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: absolute;
+            right: 200px;
+            top: 500px;
+        }
+
+        #glass-1 {
+            width: 25px;
+            height: 25px;
+            background-color: aqua;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        #glass-2 {
+            width: 25px;
+            height: 25px;
+            background-color: aqua;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        #door {
+            width: 30px;
+            height: 50px;
+            background-color: blanchedalmond;
+            position: absolute;
+            left: 35px;
+            bottom: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #roof {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+            position: absolute;
+            top: -50px;
+            right: -24px;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-bottom: 50px solid pink;
+        }
+
+        #fireplace {
+            width: 10px;
+            height: 30px;
+            background-color: aliceblue;
+            position: absolute;
+            top: -47px;
+        }
     </style>
 </head>
+
 <body>
     <div id="pig">
         <div id="left-eye">
@@ -287,5 +348,14 @@
             <div id="inner-fire"></div>
         </div>
     </div>
+
+    <dvi id="house">
+        <div id="glass-1"></div>
+        <div id="glass-2"></div>
+        <div id="door"></div>
+        <div id="fireplace"></div>
+        <div id="roof"></div>
+    </dvi>
 </body>
+
 </html>
