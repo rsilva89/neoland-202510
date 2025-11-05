@@ -10,7 +10,7 @@
             background-color: black;
         }
 
-        /* Utility clases mike */
+        /* Utility clases */
         
         .bg-yellowgreen {
             background-color: yellowgreen;
@@ -28,7 +28,7 @@
             background-color: black;
         }
 
-        .bg-tomate {
+        .bg-tomato {
             background-color: tomato;
         }
 
@@ -54,6 +54,18 @@
 
         .bg-darkgray {
             background-color: darkgray;
+        }
+
+        .bg-transparent {
+            background-color: transparent;
+        }
+
+        .bg-gold {
+            background-color: gold;
+        }
+
+        .bg-lightgray {
+            background-color: lightgray;
         }
 
         .p-10 {
@@ -88,6 +100,10 @@
             width: 60px;
         }
 
+        .w-70 {
+            width: 70px;
+        }
+
         .w-100 {
             width: 100px;
         }
@@ -95,9 +111,17 @@
         .w-200 {
             width: 200px;
         }
+
+        .h-0 {
+            height: 0px;
+        }
         
         .h-10 {
             height: 10px;
+        }
+
+        .h-15 {
+            height: 15px;
         }
 
         .h-20 {
@@ -136,16 +160,31 @@
             border-radius: 20px;
         }
 
+        .rounded-top-left-10 {
+            border-top-left-radius: 10px;
+        }
+
         .rounded-top-left-20 {
             border-top-left-radius: 20px;
         }
 
+        .rounded-top-right-10 {
+            border-top-right-radius: 10px;
+        }
         .rounded-top-right-20 {
             border-top-right-radius: 20px;
         }
 
+        .-left-50 {
+            left: -50px;
+        }
+
         .-left-10 {
             left: -10px;
+        }
+
+        .left-0 {
+            left: 0px;
         }
 
         .left-5 {
@@ -154,6 +193,10 @@
 
         .left-10 {
             left: 10px;
+        }
+
+        .left-15 {
+            left: 15px;
         }
 
         .left-20 {
@@ -195,6 +238,10 @@
         .right-20 {
             right: 20px;
         }
+
+        .-top-50 {
+            top: -50px;
+        }
         
         .-top-20 {
             top: -20px;
@@ -224,6 +271,18 @@
             top: 250px;
         }
 
+        .top-300 {
+            top: 300px;
+        }
+
+        .-bottom-50 {
+            bottom: -50px;
+        }
+
+        .bottom-0 {
+            bottom: 0px;
+        }
+
         .bottom-5 {
             bottom: 5px;
         }
@@ -232,6 +291,51 @@
             bottom: 10px;
             position: absolute;
         }
+
+        .bottom-20 {
+            bottom: 20px;
+        }
+        
+        .border-bottom-50 {
+            border-bottom-width: 50px;
+        }
+
+        .border-bottom-solid {
+            border-bottom-style: solid;
+        }
+        
+        .border-bottom-transparent {
+            border-bottom-color: lightgray;
+        }
+
+        .border-left-50 {
+            border-left-width: 50px;
+        }
+
+        .border-left-solid {
+            border-left-style: solid;
+        }
+
+        .border-left-transparent {
+            border-left-color: transparent;
+        }
+
+        .border-right-50 {
+            border-right-width: 50px;
+        }
+
+        .border-right-solid {
+            border-right-style: solid;
+        }
+
+        .border-right-transparent {
+            border-right-color: transparent;
+        }
+
+        .-z-10 {
+            z-index: -10;
+        }
+
     
         /* mike (monsters inc) */
 
@@ -396,7 +500,7 @@
 
         /* car  */
 
-        .car {
+        /* .car {
             width: 200px;
             height: 50px;
             background-color: dodgerblue;
@@ -444,7 +548,7 @@
                 left: 5px;
                 top: 5px;
             }
-        }
+        } */
 
         /* spaceship */
 
@@ -484,9 +588,18 @@
                 position: absolute;
                 left: -50px;
                 bottom: 0px;
-                border-bottom: 50px solid lightgrey;
-                border-left: 50px solid transparent;
-                border-right: 50px solid transparent;
+                /* border-bottom: 50px solid lightgrey; */
+                border-bottom-width: 50px;
+                border-bottom-style: solid;
+                border-bottom-color: lightgray;
+                /* border-left: 50px solid transparent; */
+                border-left-width: 50px;
+                border-left-style: solid;
+                border-left-color: transparent;
+                /* border-right: 50px solid transparent; */
+                border-right-width: 50px;
+                border-right-style: solid;
+                border-right-color: transparent;
             }
             
             .tail {
@@ -702,14 +815,14 @@
         </div>
     </div>
 
-    <div class="spaceship">
-        <div class="head"></div>
-        <div class="window"></div>
-        <div class="wings">
-            <div class="tail"></div>
+    <div class="w-50 h-100 bg-lightgray absolute left-100 top-300">
+        <div class="w-50 h-100 bg-lightgray absolute left-0 -top-50 rounded-50per"></div>
+        <div class="w-30 h-15 bg-aqua absolute left-10 -top-20 rounded-top-left-10 rounded-top-right-10"></div>
+        <div class="w-50 h-0 bg-transparent absolute -left-50 bottom-0 border-bottom-50 border-bottom-solid border-bottom-lightgray border-left-50 border-left-solid border-left-transparent border-right-50 border-right-solid border-right-transparent">
+            <div class="w-10 h-40 bg-gray absolute top-10 left-20"></div>
         </div>
-        <div class="fire">
-            <div class="inner-fire"></div>
+        <div class="w-70 h-100 bg-gold absolute -left-10 -bottom-50 rounded-50per -z-10">
+            <div class="w-40 h-60 bg-tomato absolute left-15 bottom-20 rounded-50per "></div>
         </div>
     </div>
 
@@ -720,8 +833,6 @@
         <div class="fireplace"></div>
         <div class="roof"></div>
     </dvi>
-
-    <!-- ahora tenemos que hacer algun logo o simbolo -->
 
     <div class="facebook">
         <div class="letter-1"></div>
