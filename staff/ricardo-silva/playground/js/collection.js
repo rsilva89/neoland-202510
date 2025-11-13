@@ -7,7 +7,9 @@ var collection = {
 collection.add = function(item) {
     this[this.count] = item
     this.count++
-@@ -21,8 +19,42 @@ collection.add('James')
+}
+
+collection.add('James')
 console.log(collection)
 // { 0: 'Peter', 1: 'Wendy', 2: 'James', count: 3 }
 
@@ -51,4 +53,3 @@ console.log(collection)
 collection.update('Pepito', 'Jiminy')
 console.log(collection)
 // { 0: 'Peter', 2: 'James', 4: 'Jiminy', 5: 'Wendy', 6: 'Jiminy', count: 7 }
-
