@@ -47,8 +47,12 @@ collection.add('Pepito')
 console.log(collection)
 // { 0: 'Peter', 2: 'James', 4: 'Pepito', 5: 'Wendy', 6: 'Pepito', count: 7 }
 
-
 // TODO implement update method
+collection.update = function (src, update){
+    for(var i = 0; i < this.count; i++)
+        if(this[i] === src)
+            this[i] = update
+}
 
 collection.update('Pepito', 'Jiminy')
 console.log(collection)
