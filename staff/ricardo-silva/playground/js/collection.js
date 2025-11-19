@@ -1,3 +1,4 @@
+
 var collection = {
     count: 0
 }
@@ -48,12 +49,28 @@ console.log(collection)
 // { 0: 'Peter', 2: 'James', 4: 'Pepito', 5: 'Wendy', 6: 'Pepito', count: 7 }
 
 // TODO implement update method
-collection.update = function (src, update){
-    for(var i = 0; i < this.count; i++)
-        if(this[i] === src)
-            this[i] = update
+collection.update = function(target, replacement) {
+    for (var i = o; i < this.count; i++)
+        if(this[i] === target)
+            this[i] = replacement
 }
-
+ 
 collection.update('Pepito', 'Jiminy')
 console.log(collection)
 // { 0: 'Peter', 2: 'James', 4: 'Jiminy', 5: 'Wendy', 6: 'Jiminy', count: 7 }
+
+//TODO implement updateFirst method to find the first element matching target and update it with replacement
+
+collection.updateFirst = function(target, replacement) {
+    for (var i = 0; i < this.count; i++)
+        if (this[i] === target) {
+            this[i] = replacement
+
+            return
+        }
+}
+
+collection.updatefirst('Jiminy', 'Pepito')
+console.log(collection)
+// { 0: 'Peter', 2: 'James', 4: 'Pepito', 5: 'Wendy', 6: 'Jiminy', count: 7 }
+
