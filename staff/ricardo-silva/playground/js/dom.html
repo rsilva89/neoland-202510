@@ -38,10 +38,13 @@
         const box = document.createElement('div')
         box.style.width = '100px'
         box.style.height = '100px'
-        box.style.backgroundColor = 'yellow'
+        box.style.backgroundColor = 'white'
         box.style.position = 'absolute'
         box.style.top = '200px'
         box.style.left = '150px'
+        box.style.borderStyle = 'solid'
+        box.style.borderColor = 'black'
+
         document.body.appendChild(box)
 
         //Circulo centrado en el cuadrado
@@ -76,7 +79,7 @@
         eyeL.style.top = '50px'
         eyeL.style.left = '35px'
         robot.appendChild(eyeL)
-        
+         
         //Ojos del robot izq
         const eyeR = document.createElement('div')
         eyeR.style.width = '40px'
@@ -96,11 +99,322 @@
         mouth.style.top = '130px'
         mouth.style.right = '60px'
         robot.appendChild(mouth)
-        
 
+        //BOB ESPONJA
 
+        //Body
+        const bobDy = document.createElement('div')
+        bobDy.style.width = '250px'
+        bobDy.style.height = '310px'
+        bobDy.style.backgroundColor = 'Yellow'
+        bobDy.style.position = 'absolute'
+        bobDy.style.top = '170px'
+        bobDy.style.left = '600px'
+        bobDy.style.borderStyle = 'solid'
+        bobDy.style.borderColor = 'black' 
+        bobDy.style.borderWidth = 'thick' //para cambiar el grosor del borde se puede usar (thin, medium o thick)
+        document.body.appendChild(bobDy)
 
-       
+        //eyes
+        const eyeLe = document.createElement('div')
+        eyeLe.style.width = '100px'
+        eyeLe.style.height = '100px'
+        eyeLe.style.backgroundColor = 'white'
+        eyeLe.style.position = 'absolute'
+        eyeLe.style.top = '40px'
+        eyeLe.style.left = '17px'
+        eyeLe.style.borderRadius = '50%'
+        eyeLe.style.borderStyle = 'solid'
+        eyeLe.style.borderColor = 'black' 
+        eyeLe.style.borderWidth = 'thick' 
+        bobDy.appendChild(eyeLe)
+
+        const eyeRi = document.createElement('div')
+        eyeRi.style.width = '100px'
+        eyeRi.style.height = '100px'
+        eyeRi.style.backgroundColor = 'white'
+        eyeRi.style.position = 'absolute'
+        eyeRi.style.top = '40px'
+        eyeRi.style.right = '17px'
+        eyeRi.style.borderRadius = '50%'
+        eyeRi.style.borderStyle = 'solid'
+        eyeRi.style.borderColor = 'black' 
+        eyeRi.style.borderWidth = 'thick' 
+        bobDy.appendChild(eyeRi)
+
+        //rainbow L
+        const rainbowL = document.createElement('div')
+        rainbowL.style.width = '50px'
+        rainbowL.style.height = '50px'
+        rainbowL.style.backgroundColor = 'skyblue'
+        rainbowL.style.position = 'absolute'
+        rainbowL.style.top = '22px'
+        rainbowL.style.left = '30px'
+        rainbowL.style.borderRadius = '50%'
+        rainbowL.style.borderStyle = 'solid'
+        rainbowL.style.borderColor = 'black' 
+        rainbowL.style.borderWidth = 'thick' 
+        eyeLe.appendChild(rainbowL)
+
+        //pupil L
+        const pupilL = document.createElement('div')
+        pupilL.style.width = '20px'
+        pupilL.style.height = '20px'
+        pupilL.style.backgroundColor = 'black'
+        pupilL.style.position = 'absolute'
+        pupilL.style.top = '10px'
+        pupilL.style.left = '10px'
+        pupilL.style.borderRadius = '50%'
+        pupilL.style.borderStyle = 'solid'
+        pupilL.style.borderColor = 'black' 
+        pupilL.style.borderWidth = 'thick' 
+        rainbowL.appendChild(pupilL)
+
+        //rainbow R
+        const rainbowR = document.createElement('div')
+        rainbowR.style.width = '50px'
+        rainbowR.style.height = '50px'
+        rainbowR.style.backgroundColor = 'skyblue'
+        rainbowR.style.position = 'absolute'
+        rainbowR.style.top = '22px'
+        rainbowR.style.right = '30px'
+        rainbowR.style.borderRadius = '50%'
+        rainbowR.style.borderStyle = 'solid'
+        rainbowR.style.borderColor = 'black' 
+        rainbowR.style.borderWidth = 'thick' 
+        eyeRi.appendChild(rainbowR)
+
+        //pupil R
+        const pupilR = document.createElement('div')
+        pupilR.style.width = '20px'
+        pupilR.style.height = '20px'
+        pupilR.style.backgroundColor = 'black'
+        pupilR.style.position = 'absolute'
+        pupilR.style.top = '10px'
+        pupilR.style.left = '10px'
+        pupilR.style.borderRadius = '50%'
+        pupilR.style.borderStyle = 'solid'
+        pupilR.style.borderColor = 'black' 
+        pupilR.style.borderWidth = 'thick' 
+        rainbowR.appendChild(pupilR)
+
+        //nose
+        const nose = document.createElement('div')
+        nose.style.width = '40px'
+        nose.style.height = '40px'
+        nose.style.backgroundColor = 'trasparent'
+        nose.style.position = 'absolute'
+        nose.style.top = '130px'
+        nose.style.left = '100px'
+        nose.style.borderRadius = '50%'
+        nose.style.borderStyle = 'solid'
+        nose.style.borderColor = 'black' 
+        nose.style.borderWidth = 'thick' 
+        bobDy.appendChild(nose)
+
+        //labios
+
+        const lips = document.createElement('div')
+        lips.style.width = '160px'
+        lips.style.height = '1px'
+        lips.style.backgroundColor = 'black'
+        lips.style.position = 'absolute'
+        lips.style.top = '187px'
+        lips.style.left = '38px'
+        lips.style.borderBottomLeftRadius = '80%'
+        lips.style.borderBottomRightRadius = '80%'
+        lips.style.borderStyle = 'solid'
+        lips.style.borderColor = 'black' 
+        lips.style.borderWidth = 'thick' 
+        bobDy.appendChild(lips)
+
+        //dientes
+        const teeth1 = document.createElement('div')
+        teeth1.style.width = '30px'
+        teeth1.style.height = '20px'
+        teeth1.style.backgroundColor = 'white'
+        teeth1.style.position = 'absolute'
+        teeth1.style.top = '0px'
+        teeth1.style.left = '38px'
+        teeth1.style.borderStyle = 'solid'
+        teeth1.style.borderColor = 'black' 
+        teeth1.style.borderWidth = 'thick' 
+        lips.appendChild(teeth1)
+
+        const teeth2 = document.createElement('div')
+        teeth2.style.width = '30px'
+        teeth2.style.height = '20px'
+        teeth2.style.backgroundColor = 'white'
+        teeth2.style.position = 'absolute'
+        teeth2.style.top = '0px'
+        teeth2.style.left = '90px'
+        teeth2.style.borderStyle = 'solid'
+        teeth2.style.borderColor = 'black' 
+        teeth2.style.borderWidth = 'thick' 
+        lips.appendChild(teeth2)
+
+        //camisa
+
+        const shirt = document.createElement('div')
+        shirt.style.width = '250px'
+        shirt.style.height = '25px'
+        shirt.style.backgroundColor = 'white'
+        shirt.style.position = 'absolute'
+        shirt.style.top = '240px'
+        shirt.style.left = '-5px'
+        shirt.style.borderStyle = 'solid'
+        shirt.style.borderColor = 'black' 
+        shirt.style.borderWidth = 'thick' 
+        bobDy.appendChild(shirt)
+
+        // pantalon
+        const pants = document.createElement('div')
+        pants.style.width = '250px'
+        pants.style.height = '35px'
+        pants.style.backgroundColor = 'brown'
+        pants.style.position = 'absolute'
+        pants.style.top = '270px'
+        pants.style.left = '-5px'
+        pants.style.borderStyle = 'solid'
+        pants.style.borderColor = 'black' 
+        pants.style.borderWidth = 'thick' 
+        bobDy.appendChild(pants)
+
+        const pantL = document.createElement('div')
+        pantL.style.width = '50px'
+        pantL.style.height = '20px'
+        pantL.style.backgroundColor = 'brown'
+        pantL.style.position = 'absolute'
+        pantL.style.top = '310px'
+        pantL.style.left = '30px'
+        pantL.style.borderBottomLeftRadius = '30%'
+        pantL.style.borderBottomRightRadius = '30%'
+        pantL.style.borderStyle = 'solid'
+        pantL.style.borderColor = 'black' 
+        pantL.style.borderWidth = 'thick' 
+        bobDy.appendChild(pantL)
+
+        const pantR = document.createElement('div')
+        pantR.style.width = '50px'
+        pantR.style.height = '20px'
+        pantR.style.backgroundColor = 'brown'
+        pantR.style.position = 'absolute'
+        pantR.style.top = '310px'
+        pantR.style.right = '30px'
+        pantR.style.borderBottomLeftRadius = '30%'
+        pantR.style.borderBottomRightRadius = '30%'
+        pantR.style.borderStyle = 'solid'
+        pantR.style.borderColor = 'black' 
+        pantR.style.borderWidth = 'thick' 
+        bobDy.appendChild(pantR)
+
+        //calcetines
+        const socksL = document.createElement('div')
+        socksL.style.width = '25px'
+        socksL.style.height = '50px'
+        socksL.style.backgroundColor = 'white'
+        socksL.style.position = 'absolute'
+        socksL.style.top = '335px'
+        socksL.style.left = '42px'
+        socksL.style.borderStyle = 'solid'
+        socksL.style.borderColor = 'black' 
+        socksL.style.borderWidth = 'thick' 
+        bobDy.appendChild(socksL)
+
+        const socksR = document.createElement('div')
+        socksR.style.width = '25px'
+        socksR.style.height = '50px'
+        socksR.style.backgroundColor = 'white'
+        socksR.style.position = 'absolute'
+        socksR.style.top = '335px'
+        socksR.style.right = '42px'
+        socksR.style.borderStyle = 'solid'
+        socksR.style.borderColor = 'black' 
+        socksR.style.borderWidth = 'thick' 
+        bobDy.appendChild(socksR)
+
+        //zapatos
+        const shoeL = document.createElement('div')
+        shoeL.style.width = '70px'
+        shoeL.style.height = '20px'
+        shoeL.style.backgroundColor = 'black'
+        shoeL.style.position = 'absolute'
+        shoeL.style.top = '390px'
+        shoeL.style.left = '-3px'
+        shoeL.style.borderTopLeftRadius = '80%'
+        shoeL.style.borderBottomRightRadius = '30%'
+        shoeL.style.borderBottomLeftRadius = '30%'
+        shoeL.style.borderStyle = 'solid'
+        shoeL.style.borderColor = 'black' 
+        shoeL.style.borderWidth = 'thick' 
+        bobDy.appendChild(shoeL)
+
+        const shoeR = document.createElement('div')
+        shoeR.style.width = '70px'
+        shoeR.style.height = '20px'
+        shoeR.style.backgroundColor = 'black'
+        shoeR.style.position = 'absolute'
+        shoeR.style.top = '390px'
+        shoeR.style.right = '-3px'
+        shoeR.style.borderTopRightRadius = '80%'
+        shoeR.style.borderBottomRightRadius = '30%'
+        shoeR.style.borderBottomLeftRadius = '30%'
+        shoeR.style.borderStyle = 'solid'
+        shoeR.style.borderColor = 'black' 
+        shoeR.style.borderWidth = 'thick' 
+        bobDy.appendChild(shoeR)
+
+        // mangas 
+        const sleeveL = document.createElement('div')
+        sleeveL.style.width = '25px'
+        sleeveL.style.height = '20px'
+        sleeveL.style.backgroundColor = 'white'
+        sleeveL.style.position = 'absolute'
+        sleeveL.style.top = '230px'
+        sleeveL.style.left = '-35px'
+        sleeveL.style.borderStyle = 'solid'
+        sleeveL.style.borderColor = 'black' 
+        sleeveL.style.borderWidth = 'thick' 
+        bobDy.appendChild(sleeveL)
+
+        const sleeveR = document.createElement('div')
+        sleeveR.style.width = '25px'
+        sleeveR.style.height = '20px'
+        sleeveR.style.backgroundColor = 'white'
+        sleeveR.style.position = 'absolute'
+        sleeveR.style.top = '230px'
+        sleeveR.style.right = '-35px'
+        sleeveR.style.borderStyle = 'solid'
+        sleeveR.style.borderColor = 'black' 
+        sleeveR.style.borderWidth = 'thick' 
+        bobDy.appendChild(sleeveR)
+
+        //brazos
+        const armL = document.createElement('div')
+        armL.style.width = '25px'
+        armL.style.height = '40px'
+        armL.style.backgroundColor = 'yellow'
+        armL.style.position = 'absolute'
+        armL.style.top = '255px'
+        armL.style.left = '-35px'
+        armL.style.borderBottomLeftRadius = '60%'
+        armL.style.borderStyle = 'solid'
+        armL.style.borderColor = 'black' 
+        armL.style.borderWidth = 'thick' 
+        bobDy.appendChild(armL)
+
+        const armR = document.createElement('div')
+        armR.style.width = '25px'
+        armR.style.height = '40px'
+        armR.style.backgroundColor = 'yellow'
+        armR.style.position = 'absolute'
+        armR.style.top = '255px'
+        armR.style.right = '-35px'
+        armR.style.borderBottomRightRadius = '60%'
+        armR.style.borderStyle = 'solid'
+        armR.style.borderColor = 'black' 
+        armR.style.borderWidth = 'thick' 
+        bobDy.appendChild(armR)
 
     </script> 
 </body>
