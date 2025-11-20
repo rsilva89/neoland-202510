@@ -17,7 +17,7 @@
         let marioX = 100, marioY = 200, marioWidth = 70, marioHeight = 150, marioLife = 10
         const step = 10
 
-        //Mario    
+        //MARIO  
         const mario = document.createElement('div')
         mario.style.width = marioWidth + 'px'
         mario.style.height = marioHeight + 'px'
@@ -32,7 +32,11 @@
         mario.style.top = marioY + 'px'
         document.body.appendChild(mario)
 
-        //Goomba
+        mario.addEventListener('click', function() {
+            alert('Ouch!')
+        })
+
+        //GOOMBA
         let goombaX = 100, goombaY = 500, goombaWidth = 80, goombaHeight = 100, goombaLife = 10
 
         const goomba = document.createElement('div')
@@ -47,6 +51,10 @@
         goomba.style.left = goombaX + 'px'
         goomba.style.top = goombaY + 'px'
         document.body.appendChild(goomba)
+
+        goomba.addEventListener('click', function() {
+            alert('dont touch me!')
+        })
 
         document.addEventListener('keydown', function(event) {
             //Teclas para Mario 
@@ -137,7 +145,34 @@
             console.log(clock.textContent)
         }, 1000)
 
+        //POINTER FOLLOWER
 
+        const follower = document.createElement('div')
+        follower.style.width = '50px'
+        follower.style.height = '50px'
+        follower.style.backgroundColor = 'gold'
+        follower.style.borderRadius = '50%'
+        follower.style.position = 'absolute'
+        follower.style.backgroundImage = 'url(images/crosshair.png)'
+        follower.style.backgroundPosition = 'center'
+        follower.style.backgroundSize = 'contain'
+        follower.style.backgroundRepeat = 'no-repeat'
+        document.body.appendChild(follower)
+
+        document.addEventListener('mousemove', function(event) {
+            console.log(event.clientX, event.clientY)
+
+            follower.style.left = event.clientX + 'px'
+            follower.style.top = event.clientY + 'px'
+        })
+
+        document.childNodes[1].style.height = '100%'
+        document.childNodes[1].style.margin = '0'
+        document.body.style.margin = '0'
+        document.body.style.padding = '0'
+        document.body.style.backgroundColor = 'skyblue'
+        document.body.style.cursor = 'none'
+        document.body.style.height = '100%'
     </script>
 </body>
 </html>
