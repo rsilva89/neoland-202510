@@ -64,13 +64,58 @@
         }
 
         // TODO implement Collection.prototype.includes
+
+        Collection.prototype.includes = function (searchItem, fromIndex) {
+            // Collection {0: 'red', 1: 'green', 2: 'blue', count: 3}
+
+            // searchItem green, fromIndex 0
+            // compare value at 0 with searchItem
+            // compare value at 1 with searchItem
+            // return true
+
+            // searchItem green, fromIndex 1
+            // compare value at 1 with searchItem
+            // return true
+
+            // searchItem green, fromIndex 2
+            // compare value at 2 with searchItem
+            // return false
+
+            /*
+            if (fromIndex === undefined)
+                for (let i = 0; i < this.count; i++) {
+                    const item = this[i]
+
+                    if (item === searchItem) return true
+                }
+            else if (fromIndex >= 0)
+                for (let i = fromIndex; i < this.count; i++) {
+                    const item = this[i]
+
+                    if (item === searchItem) return true
+                }
+            */
+
+            //Manera resumida de aplicar lo anterior
+
+            if (fromIndex === undefined) fromIndex = 0
+
+            for (let i = fromIndex; i < this.count; i++) {
+                const item = this[i]
+
+                if (item === searchItem) return true
+            }
+
+            return false
+        }
+
+
         // TODO implement Collection.prototype.indexOf
         // TODO implement Collection.prototype.reverse
 
         // TODO jodlin: Collection.prototype.sort
 
 
-        // TODO sergio: Collection.prototype.shift
         // El shift vendria a ser un desplazamiento de elementos
         /* Collection.prototype.shift = function () {
             const firstItem = this[0]
